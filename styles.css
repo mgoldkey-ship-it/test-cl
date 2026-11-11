@@ -1,0 +1,31 @@
+:root { font-family: system-ui, -apple-system, sans-serif; color: #24332f; background: #f3f6f3; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 72px 20px; }
+.card { max-width: 620px; margin: 0 auto; padding: 38px; background: #fff; border: 1px solid #e1e9e4; border-radius: 20px; box-shadow: 0 12px 38px #263f3010; }
+.eyebrow { color: #398269; font-size: 11px; font-weight: 750; letter-spacing: .14em; margin: 0 0 12px; }
+h1 { font-size: clamp(28px, 5vw, 36px); letter-spacing: -.04em; line-height: 1.15; margin: 0; }
+.subtitle { color: #687c73; margin: 10px 0 32px; line-height: 1.5; }
+label { font-size: 14px; font-weight: 650; }
+.form-row { display: flex; gap: 10px; margin-top: 9px; }
+#task-input { min-width: 0; flex: 1; font: inherit; border: 1px solid #cbd9d0; border-radius: 10px; padding: 12px 14px; background: #fff; color: inherit; }
+#task-input::placeholder { color: #899b91; }
+button { font: inherit; cursor: pointer; }
+.add-button { border: 0; border-radius: 10px; padding: 12px 18px; background: #286e55; color: white; font-weight: 650; }
+.add-button:hover { background: #205a46; }
+:focus-visible { outline: 3px solid #76bda1; outline-offset: 3px; }
+.form-error, .warning { line-height: 1.5; font-size: 14px; }
+.form-error { color: #ae3732; margin: 8px 0 0; }
+.warning { color: #804c15; background: #fff5df; border: 1px solid #f0d7a3; border-radius: 10px; padding: 12px 14px; margin: 18px 0 0; }
+.tasks { border-top: 1px solid #e8efea; margin-top: 32px; padding-top: 24px; }
+h2 { font-size: 16px; margin: 0 0 16px; }
+.empty { color: #75877d; font-size: 14px; margin: 0; padding: 12px 0; }
+ul { list-style: none; margin: 0; padding: 0; }
+.task { display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid #edf1ee; }
+.task-label { display: flex; align-items: flex-start; gap: 12px; flex: 1; min-width: 0; font-size: 15px; font-weight: 400; line-height: 1.5; cursor: pointer; }
+.task-label input { flex: none; width: 19px; height: 19px; margin: 2px 0 0; accent-color: #286e55; }
+.task-text { min-width: 0; overflow-wrap: anywhere; white-space: pre-wrap; }
+.completed { text-decoration: line-through; color: #82948a; }
+.delete-button { flex: none; border: 0; border-radius: 7px; background: transparent; color: #9a554d; padding: 8px; font-size: 13px; }
+.delete-button:hover { background: #fcf0ee; }
+[hidden] { display: none !important; }
+@media (max-width: 480px) { body { padding: 24px 14px; } .card { padding: 26px 20px; border-radius: 16px; } .form-row { flex-wrap: wrap; } #task-input { flex-basis: 100%; } .add-button { width: 100%; } }
