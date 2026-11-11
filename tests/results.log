@@ -1,0 +1,16 @@
+Playwright 1.65.0; Chromium 158.0.8127.18
+PASS empty and whitespace rejected
+PASS button, Enter, distinct IDs, independent toggle/delete and reload
+PASS HTML-like text rendered as text, no script execution
+PASS long text, 375px, no horizontal overflow, delete button in viewport
+PASS keyboard operation and visible focus outlines
+PASS unavailable read: no crash, changes in memory, no writes
+PASS unavailable write: visible warning, no promise of persistence
+  quota: QuotaExceededError, 52 × 100000 characters
+PASS actual browser quota exhaustion: warning, no promise of persistence
+PASS corrupt storage (invalid JSON) never overwritten
+PASS corrupt storage (invalid shape) never overwritten
+PASS corrupt storage (duplicate IDs) never overwritten
+SCREENSHOT mobile: 375x812, empty + filled
+SCREENSHOT desktop: 1440x900, empty + filled
+RESULT 11 tests passed

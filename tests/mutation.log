@@ -1,0 +1,11 @@
+Temporary mutation: empty-input condition disabled in isolated copy
+Playwright 1.65.0; Chromium 158.0.8127.18
+FAIL empty and whitespace rejected
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1 !== 0
+
+    at tests/browser.cjs:34:79
+    at async test (tests/browser.cjs:25:10)
+    at async run (tests/browser.cjs:33:3)
+Mutation exit code: 1 (expected nonzero)
